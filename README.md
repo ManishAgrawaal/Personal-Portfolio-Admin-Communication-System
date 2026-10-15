@@ -239,18 +239,12 @@ Swagger is available for API development and local testing.
 - [ ] **Email:** Visitor message reaches admin. Admin reply reaches visitor. Webhook catches visitor reply.
 - [ ] **Database:** Messages, Replies, and Projects stored. Migrations applied.
 
-## 19. Render Deployment
-
-The application is hosted on Render, which provides auto-deployments, environment variables, logs, and custom domain routing.
-- **Production domain:** `https://manishtechnologysolution.com`
-- **Admin:** `https://manishtechnologysolution.com/admin.html`
-
-## 20. Render Environment Variables
+## 19. Render Environment Variables
 
 Configure sensitive values in: `Render → Service → Environment → Environment Variables`.
 *After modifying: Save ➔ Rebuild/Deploy ➔ Check Logs ➔ Test.*
 
-## 21. Production Testing Checklist
+## 20. Production Testing Checklist
 
 - [ ] Render service is Live
 - [ ] Custom domain opens successfully
@@ -262,9 +256,9 @@ Configure sensitive values in: `Render → Service → Environment → Environme
 - [ ] CORS is restricted to production domains
 - [ ] Secrets are stored **only** in Render, not GitHub
 
-## 22. Git Workflow
+## 21. Git Workflow
 
-## 23. Screenshots
+## 22. Screenshots
 <p align="center">
   <b>Portfolio Homepage</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Admin Login</b> <br/>
   <img width="48%" height="250" alt="homepage" src="https://github.com/user-attachments/assets/3f5c893d-17d3-4acc-a175-60997b2fce49" />
@@ -279,19 +273,19 @@ Configure sensitive values in: `Render → Service → Environment → Environme
 </p>
 
 
-## 24. Skills Demonstrated
+## 23. Skills Demonstrated
 
 - **Backend:** C#, .NET 8, Web API, REST API design, EF Core, SQLite, Migrations, DI, JWT, Password Hashing.
 - **Frontend:** HTML5, CSS3, JavaScript, Fetch API, DOM manipulation, Responsive design, Modals.
 - **Cloud/DevOps:** Git/GitHub, Render, Environment variables, Custom domains, Production logging.
 - **Integrations:** Resend API (Email delivery), Webhooks.
 
-## 25. What This Project Demonstrates
+## 24. What This Project Demonstrates
 
 This project demonstrates the complete lifecycle of a modern small web application:
 
 
-## 26. Future Improvements
+## 25. Future Improvements
 
 - ⭐ Migrate SQLite to PostgreSQL for stronger production persistence.
 - 🧪 Add unit and integration tests.
@@ -303,7 +297,7 @@ This project demonstrates the complete lifecycle of a modern small web applicati
 - 🔔 Add unread message indicators.
 - 📬 Add email delivery status tracking.
 
-## 27. Learning / Reference Order
+## 26. Learning / Reference Order
 
 To understand the codebase, review the files in this order:
 1. `wwwroot/index.html`
@@ -321,12 +315,9 @@ To understand the codebase, review the files in this order:
 13. GitHub Actions/Commits
 14. Render Settings
 
-## 28. Links
 
-- **Source Code:** [GitHub Repository](https://github.com/ManishAgrawaal/portfolio_4you)
-- **Live Application:** [manishtechnologysolution.com](https://manishtechnologysolution.com)
 
-## 29. Author
+## 27. Author
 
 **Manish Kumar**  
 *.NET / Full Stack Developer*  
