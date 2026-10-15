@@ -1049,3 +1049,40 @@ footer p {
     }
 
 }
+.portfolio-footer {
+    padding: 25px 0;
+    background: linear-gradient(135deg, #f4f8ff, #eaf3ff);
+    border-top: 1px solid #dce8fa;
+}
+
+    .portfolio-footer p {
+        margin-bottom: 8px;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+.footer-brand {
+    color: #1769ff;
+    font-weight: 700;
+}
+
+.footer-divider {
+    margin: 0 8px;
+    color: #b0bfd5;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #1769ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+    .footer-link:hover {
+        color: #084fc0;
+        text-decoration: underline;
+    }
