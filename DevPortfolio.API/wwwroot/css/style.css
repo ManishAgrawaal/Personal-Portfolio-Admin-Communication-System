@@ -1123,6 +1123,7 @@ footer p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
     transition: transform 0.4s ease;
 }
