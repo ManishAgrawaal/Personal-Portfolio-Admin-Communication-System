@@ -507,22 +507,23 @@ async function loadProjects() {
 
 
                 // =================================================
-                // PROJECT HTML
-                // =================================================
+// PROJECT HTML
+// =================================================
 
-               const projectHtml = `
+const projectHtml = `
     <div class="col-lg-6 col-md-6 col-sm-12">
         <article class="project-card">
 
-            ${project.image ? `
+            ${image ? `
                 <div class="project-image">
-                    <img src="${escapeHtml(project.image)}"
-                         alt="${escapeHtml(title)}"
+                    <img src="${escapeHtml(image)}"
+                         alt="${title}"
                          loading="lazy">
                 </div>
             ` : ""}
 
             <div class="project-content">
+
                 <h3 class="project-title">${title}</h3>
 
                 <p class="project-description">${description}</p>
@@ -532,6 +533,7 @@ async function loadProjects() {
                         ${technologyBadges}
                     </div>
                 ` : ""}
+
             </div>
 
         </article>
