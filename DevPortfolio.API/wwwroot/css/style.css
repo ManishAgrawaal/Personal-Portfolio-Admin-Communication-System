@@ -1086,3 +1086,125 @@ footer p {
         color: #084fc0;
         text-decoration: underline;
     }
+/* =========================================
+   PROJECT CARDS
+========================================= */
+
+.project-card {
+    height: 100%;
+    background: #111d32;
+    border: 1px solid #263a59;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Card Hover */
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #087cff;
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.15);
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #0b1628;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+    padding: 28px;
+}
+
+.project-title {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    color: #b8c8df;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   TECHNOLOGY BADGES
+========================================= */
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.technology-badge {
+    background: #192c47;
+    border: 1px solid #304b70;
+    color: #c8ddff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .project-image {
+        height: 220px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+}
