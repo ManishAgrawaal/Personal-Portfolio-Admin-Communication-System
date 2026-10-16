@@ -510,61 +510,33 @@ async function loadProjects() {
                 // PROJECT HTML
                 // =================================================
 
-                const projectHtml = `
+               const projectHtml = `
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <article class="project-card">
 
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+            ${project.image ? `
+                <div class="project-image">
+                    <img src="${escapeHtml(project.image)}"
+                         alt="${escapeHtml(title)}"
+                         loading="lazy">
+                </div>
+            ` : ""}
 
-                        <article class="project-card">
-                               ${
-                image
-                    ? `
-                        <div class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">${title}</h3>
 
-                            <img src="${escapeHtml(image)}"
-                                 alt="${title}"
-                                 loading="lazy">
+                <p class="project-description">${description}</p>
 
-                        </div>
-                      `
-                    : ""
-            }
-                            <div class="project-content">
-
-                               
-
-                                <h3 class="project-title">
-
-                                    ${title}
-
-                                </h3>
-
-                                <p class="project-description">
-
-                                    ${description}
-
-                                </p>
-
-                                ${
-                                    technologyBadges
-                                        ? `
-
-                                            <div class="technology-list">
-
-                                                ${technologyBadges}
-
-                                            </div>
-
-                                          `
-                                        : ""
-                                }
-
-                            </div>
-
-                        </article>
-
+                ${technologyBadges ? `
+                    <div class="technology-list">
+                        ${technologyBadges}
                     </div>
+                ` : ""}
+            </div>
 
-                `;
+        </article>
+    </div>
+`;
 
 
                 container.append(
