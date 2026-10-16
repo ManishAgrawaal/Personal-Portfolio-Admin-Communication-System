@@ -467,6 +467,9 @@ async function loadProjects() {
                 const technologies =
                     project.technologies ||
                     "";
+                const image =
+                project.image ||
+                 "";
 
 
                 // =================================================
@@ -512,7 +515,19 @@ async function loadProjects() {
                     <div class="col-lg-6 col-md-6 col-sm-12">
 
                         <article class="project-card">
+                               ${
+                image
+                    ? `
+                        <div class="project-image">
 
+                            <img src="${escapeHtml(image)}"
+                                 alt="${title}"
+                                 loading="lazy">
+
+                        </div>
+                      `
+                    : ""
+            }
                             <div class="project-content">
 
                                
