@@ -602,16 +602,57 @@
                color: #0875ff !important;
            }
 
-       footer {
-           padding: 25px 0;
-           color: #607392 !important;
-           background: #eaf2ff !important;
-           border-top: 1px solid #dce8fa;
-       }
+     .portfolio-footer {
+  padding: 24px 16px;
+  color: #607392;
+  background: #eaf2ff;
+  border-top: 1px solid #dce8fa;
+}
 
-           footer p {
-               margin: 0;
-           }
+.portfolio-footer p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+.footer-brand {
+  font-weight: 600;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+  color: #0875ff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .portfolio-footer {
+    padding: 20px 14px;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  .portfolio-footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
 
        @media(max-width:1199.98px) {
            .profile-badge-available {
@@ -1547,31 +1588,27 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+ <footer class="portfolio-footer">
+  <div class="container text-center">
+    <p>
+      &copy; <span id="year"></span>
+      <span class="footer-brand">Manish Technology Solution</span>
+      <span class="footer-divider">|</span>
+      All Rights Reserved.
+    </p>
 
-    <footer>
-
-        <footer class="portfolio-footer">
-            <div class="container text-center">
-                <p>
-                    &copy; <span id="year"></span>
-                    <span class="footer-brand">Manish Technology Solution</span>
-                    <span class="footer-divider">|</span>
-                    All Rights Reserved.
-                </p>
-
-                <a href="https://www.manishtechnologysolution.com/"
-                   class="footer-link"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="bi bi-globe2"></i>
-                    www.manishtechnologysolution.com
-                    <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-            </div>
-        </footer>
-
-    </footer>
+    <a
+      href="https://www.manishtechnologysolution.com/"
+      class="footer-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bi bi-globe2" aria-hidden="true"></i>
+      <span>www.manishtechnologysolution.com</span>
+      <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</footer>
 
 
     <!-- jQuery -->
