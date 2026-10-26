@@ -173,27 +173,29 @@
            letter-spacing: .12em;
        }
 
-       .hero-section h1 {
-           color: #102344 !important;
-           font-size: clamp(2.8rem,5.2vw,5rem);
-           line-height: 1.04;
-           font-weight: 850;
-           letter-spacing: -.06em;
-           margin: 15px 0;
-       }
+     .hero-section h1 {
+  color: #102344;
+  font-size: clamp(2rem, 5.2vw, 5rem);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
 
-           .hero-section h1 span {
-               background: linear-gradient(100deg,#0875ff,#10bde8);
-               -webkit-background-clip: text;
-               background-clip: text;
-               -webkit-text-fill-color: transparent;
-           }
-  .hero-section h2 span {
-               background: linear-gradient(100deg,#0875ff,#10bde8);
-               -webkit-background-clip: text;
-               background-clip: text;
-               -webkit-text-fill-color: transparent;
-           }
+.hero-section h1 span {
+  background: linear-gradient(100deg, #0875ff, #10bde8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    letter-spacing: -0.03em;
+  }
+}
 
        .hero-section h2 {
            color: #172f55 !important;
@@ -897,9 +899,9 @@
 
                 <div class="col-lg-7">
 
-                   <h2>
-  Senior <span>Full Stack<span>Developer</span></span>
-</h2>
+                   <h1>
+                    Software <span>Engineer</span>
+                  </h1>
 
                     <p class="hero-description">
                         I build scalable, secure and high-performance
