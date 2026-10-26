@@ -188,6 +188,12 @@
                background-clip: text;
                -webkit-text-fill-color: transparent;
            }
+  .hero-section h2 span {
+               background: linear-gradient(100deg,#0875ff,#10bde8);
+               -webkit-background-clip: text;
+               background-clip: text;
+               -webkit-text-fill-color: transparent;
+           }
 
        .hero-section h2 {
            color: #172f55 !important;
@@ -891,9 +897,9 @@
 
                 <div class="col-lg-7">
 
-                   <h1>
-  Senior<span>Full Stack<span>Developer</span></span>
-</h1>
+                   <h2>
+  Senior <span>Full Stack<span>Developer</span></span>
+</h2>
 
                     <p class="hero-description">
                         I build scalable, secure and high-performance
