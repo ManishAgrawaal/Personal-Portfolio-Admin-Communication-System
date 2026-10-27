@@ -2943,6 +2943,61 @@
         }
     </style>
 
+
+    <style id="all-screen-size-layout-fixes">
+        html, body { min-width: 320px; width: 100%; }
+        body { overflow-x: hidden; }
+        #adminDashboard { width: 100%; min-height: 100vh; height: auto; overflow: visible !important; }
+        #adminDashboard main, #adminDashboard .admin-header, #adminDashboard .header-container { min-width: 0; max-width: 100%; }
+        #adminDashboard main .container { min-width: 0; }
+        #adminDashboard .admin-section, #adminDashboard .section-header, #adminDashboard .page-title, #adminDashboard .stat-card { min-width: 0; }
+        #adminDashboard .table-wrapper { width: 100%; max-width: 100%; overflow-x: auto !important; overflow-y: hidden; }
+        #adminDashboard .conversation-box { width: min(850px, 100%); max-width: 100%; }
+        #adminDashboard .modal-dialog { width: calc(100% - 2rem); max-width: 650px; }
+        #adminDashboard img, #adminDashboard svg { max-width: 100%; }
+
+        @media (min-width: 761px) and (max-width: 1100px) {
+            #adminDashboard { padding-left: 220px !important; }
+            #adminDashboard .dp-sidebar { width: 220px !important; }
+            #adminDashboard .stats { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+            #adminDashboard .stat-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+            #adminDashboard .page-title { display: block; }
+        }
+
+        @media (max-width: 760px) {
+            #adminDashboard { padding-left: 0 !important; padding-right: 0 !important; overflow: visible !important; }
+            #adminDashboard main { width: 100%; }
+            #adminDashboard .header-container { min-width: 0; }
+            #adminDashboard .logo { min-width: 0; overflow-wrap: anywhere; }
+            #adminDashboard .section-header h2 { overflow-wrap: anywhere; }
+            #adminDashboard .table-wrapper { scrollbar-width: thin; }
+            #adminDashboard .modal-dialog { width: calc(100% - 1rem); margin: .5rem auto; }
+        }
+
+        @media (max-width: 420px) {
+            #adminDashboard main .container { width: calc(100% - 24px) !important; }
+            #adminDashboard .admin-header { padding-inline: 12px !important; }
+            #adminDashboard .header-container { gap: 5px; }
+            #adminDashboard .logo { font-size: clamp(13px, 4vw, 16px) !important; letter-spacing: -.4px; }
+            #adminDashboard .header-buttons .btn-danger { min-height: 36px; padding: 7px 9px; font-size: 12px; }
+            #adminDashboard .stats { grid-template-columns: 1fr !important; }
+            #adminDashboard .stat-card:last-child:nth-child(odd) { grid-column: auto; }
+            #adminDashboard .section-header { padding: 14px !important; }
+            #adminDashboard .section-header .header-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            #adminDashboard .refresh-btn, #adminDashboard .add-btn { min-width: 0; padding-inline: 8px !important; font-size: 12px; }
+            #adminDashboard .conversation-header { gap: 8px; }
+            #adminDashboard .conversation-message-header { flex-direction: column; gap: 4px; }
+            #adminDashboard .reply-actions > button { flex: 1 1 120px; }
+        }
+
+        @media (max-height: 520px) and (max-width: 900px) {
+            #adminDashboard { padding-bottom: 62px !important; }
+            #adminDashboard .dp-sidebar { min-height: 56px; padding-top: 4px; padding-bottom: calc(4px + env(safe-area-inset-bottom)); }
+            #adminDashboard .dp-nav-link { min-height: 46px; }
+            #adminDashboard .admin-header { padding-block: 9px !important; }
+            #adminDashboard main .container { padding-top: 16px !important; }
+        }
+    </style>
 </head>
 
 
@@ -4914,3 +4969,4 @@ const AUTH_API =
 </body>
 
 </html>
+
